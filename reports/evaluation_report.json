@@ -1,0 +1,46 @@
+{
+  "checkpoint": "checkpoints/sft/final",
+  "evaluated_at": "2026-10-31 22:41:16",
+  "metrics": {
+    "humaneval": {
+      "samples": 5,
+      "passed": 5,
+      "pass_at_1": 100.0
+    },
+    "mbpp": {
+      "samples": 5,
+      "passed": 0,
+      "pass_at_1": 0.0
+    },
+    "syntax_validity": {
+      "samples": 5,
+      "valid": 5,
+      "validity_rate": 100.0
+    },
+    "tool_call_validity": {
+      "samples": 1,
+      "valid": 0,
+      "validity_rate": 0.0
+    }
+  },
+  "sample_evaluations": [
+    {
+      "task_id": "HumanEval/0",
+      "prompt": "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold...",
+      "passed": true,
+      "syntax_ok": true
+    },
+    {
+      "task_id": "HumanEval/1",
+      "prompt": "from typing import List\n\n\ndef separate_paren_groups(paren_string: str) -> List[s...",
+      "passed": true,
+      "syntax_ok": true
+    },
+    {
+      "task_id": "HumanEval/2",
+      "prompt": "\n\ndef truncate_number(number: float) -> float:\n    \"\"\" Given a positive floating...",
+      "passed": true,
+      "syntax_ok": true
+    }
+  ]
+}

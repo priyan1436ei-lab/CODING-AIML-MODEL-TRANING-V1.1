@@ -1,0 +1,58 @@
+{
+  "os": {
+    "system": "Windows",
+    "release": "11",
+    "version": "10.0.26300",
+    "architecture": "AMD64"
+  },
+  "cpu": {
+    "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "physical_cores": 4,
+    "logical_cores": 8,
+    "cpu_freq_mhz": 2509.0
+  },
+  "ram": {
+    "total_gb": 23.69,
+    "available_gb": 4.65,
+    "percent_used": 80.4
+  },
+  "disk": {
+    "total_gb": 474.72,
+    "free_gb": 117.91,
+    "used_gb": 356.81,
+    "percent_used": 75.2
+  },
+  "gpu": {
+    "has_nvidia_smi": true,
+    "gpu_name": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+    "driver_version": "591.74",
+    "cuda_version": null,
+    "vram_total_mb": 6144.0,
+    "vram_free_mb": 4693.0
+  },
+  "pytorch": {
+    "installed": true,
+    "version": "2.14.0+cpu",
+    "cuda_available": false,
+    "cuda_version": null,
+    "device_count": 0,
+    "devices": []
+  },
+  "python": {
+    "version": "3.13.13",
+    "executable": "C:\\Users\\priya\\AppData\\Local\\Programs\\Python\\Python313\\python.exe"
+  },
+  "recommended_training_config": {
+    "device": "cpu",
+    "precision": "fp32",
+    "micro_batch_size": 2,
+    "gradient_accumulation_steps": 4,
+    "max_seq_len": 512,
+    "num_workers": 4,
+    "gradient_checkpointing": false,
+    "use_compile": false,
+    "model_preset": "code_educational_experiment",
+    "hardware_tier": "cpu_optimized",
+    "note": "NVIDIA GPU detected (NVIDIA GeForce RTX 3050 6GB Laptop GPU, 6144.0 MB VRAM), but current PyTorch build is CPU-only. Auto-configuring high-performance CPU multi-threading, with an option to switch to PyTorch CUDA build for GPU acceleration."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "stage": "sft",
+  "base_checkpoint": "checkpoints/pretrain/final",
+  "max_seq_len": 512,
+  "epochs": 2,
+  "max_steps": 40,
+  "batch_size": 2,
+  "gradient_accumulation_steps": 4,
+  "learning_rate": 0.0002,
+  "warmup_steps": 5,
+  "weight_decay": 0.01,
+  "use_lora": false,
+  "lora_rank": 16,
+  "log_interval": 5,
+  "output_dir": "checkpoints/sft"
+}
+

@@ -1,0 +1,55 @@
+{
+  "cloud_gpu_profiles": {
+    "nvidia_a100_80gb": {
+      "model_preset": "code_1b",
+      "vocab_size": 32000,
+      "hidden_size": 2048,
+      "num_hidden_layers": 24,
+      "num_attention_heads": 16,
+      "num_key_value_heads": 4,
+      "max_position_embeddings": 4096,
+      "precision": "bf16",
+      "micro_batch_size": 16,
+      "gradient_accumulation_steps": 4,
+      "learning_rate": 0.0003,
+      "use_flash_attention_2": true,
+      "gradient_checkpointing": true,
+      "estimated_tokens_per_sec": 45000,
+      "cost_estimate_per_hour": "$1.50 - $2.20"
+    },
+    "nvidia_h100_80gb": {
+      "model_preset": "code_3b",
+      "vocab_size": 49152,
+      "hidden_size": 3072,
+      "num_hidden_layers": 32,
+      "num_attention_heads": 24,
+      "num_key_value_heads": 8,
+      "max_position_embeddings": 8192,
+      "precision": "bf16",
+      "micro_batch_size": 32,
+      "gradient_accumulation_steps": 2,
+      "learning_rate": 0.0002,
+      "use_flash_attention_2": true,
+      "gradient_checkpointing": true,
+      "estimated_tokens_per_sec": 120000,
+      "cost_estimate_per_hour": "$2.80 - $3.80"
+    },
+    "nvidia_rtx_4090_24gb": {
+      "model_preset": "code_500m",
+      "vocab_size": 32000,
+      "hidden_size": 1024,
+      "num_hidden_layers": 16,
+      "num_attention_heads": 16,
+      "num_key_value_heads": 4,
+      "max_position_embeddings": 2048,
+      "precision": "bf16",
+      "micro_batch_size": 8,
+      "gradient_accumulation_steps": 4,
+      "learning_rate": 0.00025,
+      "use_flash_attention_2": true,
+      "gradient_checkpointing": true,
+      "estimated_tokens_per_sec": 22000,
+      "cost_estimate_per_hour": "$0.40 - $0.70"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "stage": "pretraining",
+  "model_preset": "educational_tiny",
+  "max_seq_len": 512,
+  "epochs": 1,
+  "max_steps": 50,
+  "batch_size": 2,
+  "gradient_accumulation_steps": 4,
+  "learning_rate": 0.0003,
+  "min_lr_ratio": 0.1,
+  "weight_decay": 0.01,
+  "warmup_steps": 10,
+  "clip_grad_norm": 1.0,
+  "eval_interval": 25,
+  "log_interval": 5,
+  "output_dir": "checkpoints/pretrain"
+}
