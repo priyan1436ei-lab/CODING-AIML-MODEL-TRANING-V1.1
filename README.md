@@ -247,3 +247,4 @@ The model exposes OpenAI-compatible REST and streaming endpoints:
 Preconfigured configurations are available in `configs/cloud_gpu_scaling.json` for scaling up to multi-billion parameter models on NVIDIA A100, H100, and RTX 4090 GPUs.
 
 # CODING-AIML-MODEL-TRANING-V1.1
+# Universal-Coding-AI-Model-Decoder-Only-Transformer-LLM-
